@@ -1,0 +1,37 @@
+talkkia:
+  data:
+     collectors:
+       schedule: "0 0 */3 * * ?"
+       ttl: 172800000 # 48 hours
+       source:
+        newsapi:
+          enabled: true
+          apikey: 0e5e0f815983428bab638e196f67ddd7
+          topheadline:
+            enabled: true
+            endpoint: https://newsapi.org/v2/top-headlines
+            pagesize: 100
+            country:
+            category: entertainment,general,health,science,sports,technology,business
+          everything:
+            enabled: true
+            endpoint: https://newsapi.org/v2/everything
+            pagesize: 100
+            language:
+
+
+spring:
+    neo4j:
+      uri: bolt://localhost:7687
+      authentication:
+        username: neo4j
+        password: secret
+
+logging:
+  level:
+    root: WARN
+    org:
+      neo4j:
+      ogm:
+       drivers:
+         bolt: WARN

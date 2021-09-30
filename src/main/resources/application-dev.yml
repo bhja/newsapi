@@ -1,0 +1,13 @@
+talkkia:
+  data:
+    collectors:
+      schedule: "*/30 * * * * ?"
+
+logging:
+  level:
+    root: DEBUG
+    org:
+      neo4j:
+      ogm:
+        drivers:
+          bolt: DEBUG
