@@ -6,7 +6,7 @@ talkkia:
        source:
         newsapi:
           enabled: true
-          apikey: ***** #Replace with your key.
+          apikey: test-api #Replace with your key.
           topheadline:
             enabled: true
             endpoint: https://newsapi.org/v2/top-headlines
