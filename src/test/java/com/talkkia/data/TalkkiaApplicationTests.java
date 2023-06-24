@@ -9,5 +9,4 @@ class TalkkiaApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }
